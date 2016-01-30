@@ -8,7 +8,7 @@ using namespace std;
 float dist(int, int, int, int);
 
 Mat ori,image;
-const char window[] = "Add some light!";
+const char window[] = "Processed";
 const char window_ori[] = "Original";
 uchar *pixptr;
 
@@ -40,7 +40,7 @@ void onChange(int pos, void* data) {
 
 int main() {
 	
-	ori = imread("hw1-1.jpg");   // Read the file
+	ori = imread("image/hw1-1.jpg");   // Read the file
 	if(ori.empty()) {
 		cout << "Open image failed." << endl;
 		system("pause");
@@ -56,6 +56,6 @@ int main() {
 	namedWindow(window_ori, WINDOW_NORMAL);
 	imshow(window_ori, ori);
 	waitKey();
-	imwrite("hw1-1.png", image);
+	imwrite("image/hw1-1.png", image);
 	return 0;
 }

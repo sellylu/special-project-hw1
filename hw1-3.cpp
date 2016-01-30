@@ -22,7 +22,7 @@ int edge_size = 0;
 
 int main() {
 	
-	Mat ori = imread("hw1-3.jpg");   // Read the file
+	Mat ori = imread("image/hw1-3.jpg");   // Read the file
 	if(ori.empty()) {
 		cout << "Open image failed." << endl;
 		system("pause");
@@ -71,7 +71,7 @@ int main() {
 			pixptr += 3;
 		}
 	}
-	imwrite("hw1-3.png", image);
+	imwrite("image/hw1-3.png", image);
 	
 	namedWindow(window, WINDOW_NORMAL);
 	imshow(window, image);

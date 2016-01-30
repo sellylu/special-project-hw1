@@ -23,7 +23,7 @@ const int MAX_RED = 255;
 
 int main() {
 	
-	Mat ori = imread("hw1-2.jpg");   // Read the file
+	Mat ori = imread("image/hw1-2.jpg");   // Read the file
 	if(ori.empty()) {
 		cout << "Open image failed." << endl;
 		system("pause");
@@ -56,7 +56,7 @@ int main() {
 		}
 	}
 	cout << "Dark Corner Added." << endl;
-	imwrite("hw1-2-1.png", image);
+	imwrite("image/hw1-2-1.png", image);
 	
 	namedWindow(window, WINDOW_NORMAL);
 	imshow(window, image);
@@ -90,7 +90,7 @@ void onMouse(int event, int x, int y, int flag, void* data) {
 		}
 	}
 	cout << "Light Added." << endl;
-	imwrite("hw1-2-2.png", result);
+	imwrite("image/hw1-2-2.png", result);
 	imshow(window, result);
 }
 
