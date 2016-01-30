@@ -19,10 +19,12 @@ $ ./<executable_file>
 
 ## Specification
 
-**1. Simple Filter**:
-Change the color tone to let the picture looks 文青.<br>
-**2. Vignette and Light Source**: Add shadowy corner which can bright the center and a light source if desired.<br>
-**3. Movie Filter**: Make normal photographed picture looks like picture from a movie.
+1. **Simple Filter:**
+Change the color tone to let the picture looks 文青.
+2. **Vignette and Light Source:**
+Add shadowy corner which can bright the center and a light source if desired.
+3. **Movie Filter:**
+Make normal photographed picture looks like picture from a movie.
 
 ## Concept Development
 
@@ -80,8 +82,14 @@ Change the color tone to let the picture looks 文青.<br>
 
 3. **Movie Filter**
 
-	As mentioned in *Concept Development*, we can actually process the steps in the tutorial page by finding according functions to all those steps. And I fulfilled it by using [Desmos](https://www.desmos.com/calculator) to gradually get all those arguments which satisfy the curves in PS the most.
+	As mentioned in [Concept Development](https://github.com/sellylu/special-project-hw1/blob/master/README.md#concept-development), we can actually process the steps in the tutorial page by finding according functions to all those steps. And I fulfilled it by using [Desmos](https://www.desmos.com/calculator) to gradually get all those arguments which satisfy the curves in PS the most.
 	
+	- Red one is for adjust red color.
+	- Blue one is for adjust green and blue color.
+	- Green one is for adjust luminosity.
+	- Black point (255, 255) is the boundary point.
+	- Purple point (128, 128) is the middle point.
+
 	![Function Generating](report_image/function.png)
 	
 	Implement functions generated and apply to `pixptr` can then get nice filtered image which looks quite like a shot from movie!
@@ -130,7 +138,8 @@ Change the color tone to let the picture looks 文青.<br>
 ## Reference
 
 - Markdown Syntax: <http://markdown.tw/>
-- Movie Filter: <http://photoblog.hk/wordpress/105136/如何在-ps-以曲線-curves-拉出電影感色調>
+- Movie Filter Tutorial: <http://photoblog.hk/wordpress/105136/如何在-ps-以曲線-curves-拉出電影感色調>
 - Image for Question1: <http://www.ettoday.net/news/20121025/118089.htm>
 - Concept of Normalization: <https://en.wikipedia.org/wiki/Normalization_(statistics)>
 - Graphing Functions for Question3: <https://www.desmos.com/calculator>
+- Prototype of Functions with Trackbar and Mouse: <http://docs.opencv.org/master/d7/dfc/group__highgui.html#gsc.tab=0>
