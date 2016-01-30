@@ -9,7 +9,7 @@ float dist(int, int, int, int);
 
 Mat ori,image;
 const char window[] = "Add some light!";
-//const char window_ori[] = "Original";
+const char window_ori[] = "Original";
 uchar *pixptr;
 
 int r_scale = 100, g_scale = 100, b_scale = 100;
@@ -53,8 +53,8 @@ int main() {
 	createTrackbar("B", window, &b_scale, 200, onChange);
 	
 	imshow(window, ori);
-	//namedWindow(window_ori, WINDOW_NORMAL);
-	//imshow(window_ori, ori);
+	namedWindow(window_ori, WINDOW_NORMAL);
+	imshow(window_ori, ori);
 	waitKey();
 	imwrite("hw1-1.png", image);
 	return 0;
