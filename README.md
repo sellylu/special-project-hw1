@@ -1,6 +1,6 @@
 # Special Project HW1
 
-Though we only need to choose one of question 2 or 3 to work on, I do really want to practice, so I've done both question 2 and 3.
+> Though we only need to choose one of question 2 or 3 to work on, I do really want to practice, so I've done both question 2 and 3.
 
 ## Specification
 
