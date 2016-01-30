@@ -1,6 +1,21 @@
 # Special Project HW1
 
-> Though we only need to choose one of question 2 or 3 to work on, I do really want to practice, so I've done both question 2 and 3.
+## Introduction
+
+Though we only need to choose one of question 2 or 3 to work on, I do really want to practice, so I've done both question 2 and 3.
+And all the original test pictures and processed pictures are stored in [sellylu/special-project-hw1/image/](https://github.com/sellylu/special-project-hw1/tree/master/image).
+
+- `*.jpg` are the original pictures.
+- `*.png` are the processed pictures.
+
+Since I'm using MacBook, I'm now using library of opencv with directly creating CMakeLists.txt. If it's possible Windows or Linux Ubuntu users to use `cmake`, following steps below might be possible re-compile and run exacutable files in other operating systems. (Though it might require install opencv with Qt support if using Qt widgets, such as button or track bar.)
+
+```shell
+$ cd <dir>
+$ cmake .
+$ make
+$ ./<executable_file>
+```
 
 ## Specification
 
