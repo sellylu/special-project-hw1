@@ -1,6 +1,6 @@
 # Special Project HW1
 
-Though we only need to choose one of question 2 and 3 to work on, I do really want to practice, so I've done both question 2 and 3.
+Though we only need to choose one of question 2 or 3 to work on, I do really want to practice, so I've done both question 2 and 3.
 
 ## Specification
 
@@ -38,7 +38,7 @@ Change the color tone to let the picture looks 文青.<br>
 
 		light_halfsize = result.cols < result.rows ? result.cols/4 : result.rows/4;
 
-	And then, create `function dist(...)` to calculate distance between two points. Using it in `function light_dist(...)` can then get normalized distance range from 1 to infinity. While we only iterate limitless `2*light_halfsize` pixels in both column and row, and we gave specialized arguments which make the light dimmer when getting away from source as well, the actual range of return value of `function light_dist(...)` is approximately from 0 to 1.
+	And then, create `function dist(...)` to calculate distance between two points. Using it in `function light_dist(...)` can then get normalized distance range from 1 to infinity. While we only iterate limitless `2*light_halfsize` pixels in both column and row, and we gave specialized arguments which make the light dimmer when getting away from source as well, the actual range of return value of `function light_dist(...)` is approximately from 0 to 1. 
 
 		float dist(int x, int y, int x_ori, int y_ori) {
 			return sqrt(pow(x-x_ori, 2) + pow(y-y_ori, 2));
@@ -100,7 +100,17 @@ Change the color tone to let the picture looks 文青.<br>
 
 ## Discussion
 
+1. **Simple Filter**
 
+	At the beginning, I didn't use the track bars to control my filter, but it was really inconvenient. I have to rerun each time failed to get the desired colors. Thus, it came up to me that using track bars might be much easier and more intuitive for user!
+
+2. **Vignette and Light Source**
+
+	This question actually cost me most of the time. I was stuck in some mathematic probelms of calculating exact normalized distance. After solving problems of normalization, there came problems of putting on light/vignette as mask with transparent edge. But it came out to be some stupid mistakes at first, so I couldn't jumped out of the loop for a long time. However, after clarifying a correct method, it feel like everything is clarified!!!
+
+3. **Movie Filter**
+
+	Maybe it's because that I did this part after question 2, there's no much problem. Everything went really well while implementing.
 
 ## Reference
 
